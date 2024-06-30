@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         println(firstList[0])
     }
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "SuspiciousIndentation")
     private fun startRace(ind1 : Int, ind2 : Int, list : ArrayList<Car>, rezult: TextView): Car {
 
         val car1 = list[ind1]
