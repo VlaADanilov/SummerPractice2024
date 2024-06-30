@@ -34,9 +34,14 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             rezult.text = ""
             val number = numbField.text.toString().toInt()
-            val list= ArrayList<Car>();
-            pull(list, number)
-            going(list, rezult)
+            if (number == 0){
+                rezult.text = "Ноль машин, гонки не будет!"
+            }
+            else{
+                val list = ArrayList<Car>();
+                pull(list, number)
+                going(list, rezult)
+            }
         }
     }
 
